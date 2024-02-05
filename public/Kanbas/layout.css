@@ -1,0 +1,21 @@
+.page-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.content-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.content {
+  padding: 20px;
+  width: 100%;
+}
+
+@media (max-width: 767.98px) {
+  .page-wrapper {
+    flex-direction: column;
+  }
+}

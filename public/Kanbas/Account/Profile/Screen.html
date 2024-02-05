@@ -1,83 +1,185 @@
-<table>
-  <tbody>
-    <tr>
-      <td valign="top">
-        <ul>
-          <li><a href="/Kanbas/Account/Navigation/index.html">Account</a></li>
-          <li>
-            <a href="/Kanbas/Dashboard/screen.html">Dashboard</a>
-          </li>
-          <li>
-            <a href="/Kanbas/Courses/Home/screen.html">Courses</a>
-          </li>
-          <li>
-            <a href="/Kanbas/Calendar/index.html">Calendar</a>
-          </li>
-          <li><a href="/Kanbas/Inbox/index.html">Inbox</a></li>
-          <li><a href="/Kanbas/History/index.html">History</a></li>
-          <li><a href="/Kanbas/Studio/index.html">Studio</a></li>
-          <li><a href="/Kanbas/Commons/index.html">Commons</a></li>
-          <li><a href="/Kanbas/Help/index.html">Help</a></li>
-        </ul>
-      </td>
-      <td valign="top">
-        <ul>
-          <li>
-            <a href="/Kanbas/Account/Navigation/index.html">Notifications</a>
-          </li>
-          <li>
-            <a href="/Kanbas/Account/Profile/screen.html">Profile</a>
-          </li>
-          <li>
-            <a href="">Files</a>
-          </li>
-          <li>
-            <a href="">Settings</a>
-          </li>
-          <li>
-            <a href="">ePortfolios</a>
-          </li>
-          <li>
-            <a href="">Shared Content</a>
-          </li>
-          <li>
-            <a href="">The Hub</a>
-          </li>
-          <li>
-            <a href="">Qwickly Course Tools</a>
-          </li>
-          <li>
-            <a href="">Global Announcements</a>
-          </li>
-        </ul>
-      </td>
-      <td valign="top">
-        Jose Annunziato's Profile
-        <hr />
-
-        <table>
-          <tr>
-            <td valign="top">
-              <h2>Jose Annunziato</h2>
-              <h3>Contact</h3>
-              <p>
-                No registered services, you can add some on the
-                <a href="">settings</a> page.
-              </p>
-              <h3>Biography</h3>
-              <p>
-                Faculty, Software Engineer, AI, Space, and renewables
-                enthusiast.
-              </p>
-              <h3>Links</h3>
-              <a href="">YouTube</a>
-            </td>
-            <td valign="top">
-              <a href="./Edit/screen.html"><button>Edit Profile</button></a>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-  </tbody>
-</table>
+<html>
+  <head>
+    <link rel="stylesheet" href="/Kanbas/styles.css" />
+    <link rel="stylesheet" href="/Kanbas/layout.css" />
+    <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
+    <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <!-- Kanbas Navigation -->
+      <div class="wd-kanbas-mobile-nav d-flex d-md-none">
+        <button
+          class="btn-collapse"
+          data-bs-target="#kanbasNavCollapse"
+          data-bs-toggle="collapse"
+        >
+          <i class="fa fa-bars"></i>
+        </button>
+        <div>Dashboard</div>
+        <button
+          class="btn-collapse"
+          data-bs-target="#subNavCollapse"
+          data-bs-toggle="collapse"
+        >
+          <i class="fa fa-caret-down"></i>
+        </button>
+      </div>
+      <div id="kanbasNavCollapse" class="collapse">
+        <div class="wd-kanbas-navigation">
+          <div class="kanbas-nav-header d-flex d-md-none">
+            <div>CANVAS</div>
+            <button
+              class="btn-collapse"
+              data-bs-target="#kanbasNavCollapse"
+              data-bs-toggle="collapse"
+            >
+              <i class="fa fa-times"></i>
+            </button>
+          </div>
+          <ul>
+            <li class="d-none d-md-block">
+              <a href="http://northeastern.edu">N</a>
+            </li>
+            <li class="wd-active">
+              <a href="/Kanbas/Account/Profile/screen.html">
+                <i id="account-icon" class="fa fa-user-circle-o"></i>
+                <div>Account</div></a
+              >
+            </li>
+            <li>
+              <a href="/Kanbas/Dashboard/screen.html">
+                <i class="fa fa-tachometer"></i>
+                <div>Dashboard</div></a
+              >
+            </li>
+            <li>
+              <a href="/Kanbas/Courses/Home/screen.html"
+                ><i class="fa fa-book"></i>
+                <div>Courses</div></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa fa-calendar"></i>
+                <div>Calendar</div></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa fa-inbox"></i>
+                <div>Inbox</div></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa fa-history"></i>
+                <div>History</div></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa fa-television"></i>
+                <div>Studio</div></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa fa-sign-out"></i>
+                <div>Commons</div></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa fa-question-circle-o"></i>
+                <div>Help</div></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Table with Sub Navigation and Content -->
+      <div style="width: 100%">
+        <div class="breadcrumb-nav d-none d-md-flex">
+          <div>
+            <button
+              class="btn-collapse"
+              data-bs-target="#subNavCollapse"
+              data-bs-toggle="collapse"
+            >
+              <i class="fa fa-bars breadcrumb-menu"></i></button
+            >Jose Annunziato's Profile
+          </div>
+          <hr />
+        </div>
+        <div class="content-wrapper">
+          <!-- Sub Navigation -->
+          <div id="subNavCollapse" class="collapse show">
+            <div class="wd-navigation">
+              <ul>
+                <li>
+                  <a href="/Kanbas/Account/Navigation/index.html"
+                    >Notifications</a
+                  >
+                </li>
+                <li class="wd-active">
+                  <a href="/Kanbas/Account/Profile/screen.html">Profile</a>
+                </li>
+                <li>
+                  <a href="">Files</a>
+                </li>
+                <li>
+                  <a href="">Settings</a>
+                </li>
+                <li>
+                  <a href="">ePortfolios</a>
+                </li>
+                <li>
+                  <a href="">Shared Content</a>
+                </li>
+                <li>
+                  <a href="">The Hub</a>
+                </li>
+                <li>
+                  <a href="">Qwickly Course Tools</a>
+                </li>
+                <li>
+                  <a href="">Global Announcements</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Content -->
+          <div class="content">
+            <table>
+              <tr>
+                <td valign="top">
+                  <h2>Jose Annunziato</h2>
+                  <h3>Contact</h3>
+                  <p>
+                    No registered services, you can add some on the
+                    <a href="">settings</a> page.
+                  </p>
+                  <h3>Biography</h3>
+                  <p>
+                    Faculty, Software Engineer, AI, Space, and renewables
+                    enthusiast.
+                  </p>
+                  <h3>Links</h3>
+                  <a href="">YouTube</a>
+                </td>
+                <td valign="top">
+                  <a href="./Edit/screen.html"><button>Edit Profile</button></a>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

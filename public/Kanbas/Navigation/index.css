@@ -1,0 +1,150 @@
+.wd-kanbas-navigation {
+  list-style: none;
+  width: 80px;
+}
+.wd-kanbas-navigation ul {
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  background-color: black;
+  width: 80px;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.wd-kanbas-navigation li {
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 0.8em;
+  text-align: center;
+}
+.wd-kanbas-navigation li.wd-active {
+  background-color: white;
+}
+.wd-kanbas-navigation li.wd-active a {
+  color: #d41b2c;
+}
+.wd-kanbas-navigation a {
+  color: white;
+  text-decoration: none;
+}
+.wd-kanbas-navigation a i {
+  color: #d41b2c;
+  font-size: 2em;
+  margin-bottom: 5px;
+  display: block;
+}
+
+#account-icon {
+  color: #bbb;
+}
+
+.breadcrumb-nav {
+  width: 100%;
+  padding: 20px;
+  font-size: 1.5em;
+  flex-direction: column;
+}
+.breadcrumb-nav > div {
+  padding-bottom: 10px;
+}
+.breadcrumb-nav .fa-caret-right {
+  color: #bbb;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.breadcrumb-menu {
+  margin-right: 40px;
+  color: #d41b2c;
+}
+.sub-nav {
+  width: 150px;
+}
+
+.wd-kanbas-mobile-nav {
+  width: 100%;
+  background: black;
+  color: white;
+  padding: 20px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn-collapse {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: none;
+}
+
+.kanbas-nav-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  padding-bottom: 0;
+  font-size: 1.2em;
+}
+.kanbas-nav-header > div {
+  font-size: 2em;
+  font-weight: bold;
+  color: #d41b2c;
+}
+
+@media (min-width: 768px) {
+  #kanbasNavCollapse {
+    display: flex;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .wd-kanbas-navigation {
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background: white;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    transition: width 0.3s ease, opacity 0.3s ease;
+    overflow: hidden;
+    opacity: 0;
+  }
+  .wd-kanbas-navigation ul {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    height: auto;
+    width: auto;
+    background-color: white;
+  }
+  .show .wd-kanbas-navigation {
+    width: 100%;
+    opacity: 1;
+  }
+  .wd-kanbas-navigation a {
+    color: #d41b2c;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    padding-left: 50px;
+    align-items: center;
+  }
+  .wd-kanbas-navigation li.wd-active {
+    background-color: white;
+  }
+  .wd-kanbas-navigation li.wd-active a {
+    color: #d41b2c;
+  }
+  .wd-kanbas-navigation a i {
+    display: inline-flex;
+    margin-right: 20px;
+  }
+}
