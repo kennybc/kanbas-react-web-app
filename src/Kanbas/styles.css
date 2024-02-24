@@ -1,0 +1,24 @@
+.btn {
+  border: 1px solid #bbb !important;
+  border-radius: 3px;
+  background: #eee;
+}
+.btn:hover {
+  background: #dedede;
+}
+.btn-red {
+  background: #d41b2c;
+  color: white !important;
+  border: 1px solid #666 !important;
+}
+.btn-red:hover {
+  background: #be1827;
+}
+.btn-green {
+  background: green;
+  color: white !important;
+  border: 1px solid #666 !important;
+}
+.btn-green:hover {
+  background: #007300;
+}

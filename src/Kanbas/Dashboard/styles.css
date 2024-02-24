@@ -1,0 +1,12 @@
+.kanbas-dashboard-card {
+  width: 300px;
+}
+.kanbas-dashboard-card .card-img-top {
+  max-height: 150px;
+}
+
+.kanbas-dashboard-card .card-title {
+  text-decoration: none;
+  color: navy;
+  font-weight: bold;
+}
