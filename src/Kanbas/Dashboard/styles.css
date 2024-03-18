@@ -1,12 +1,56 @@
 .kanbas-dashboard-card {
+  position: relative;
   width: 300px;
 }
 .kanbas-dashboard-card .card-img-top {
-  max-height: 150px;
+  position: relative;
+}
+.kanbas-dashboard-card .card-img-top img {
+  width: 100%;
+  height: 150px;
+}
+.kanbas-dashboard-card .card-img-top:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.9) inset;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-.kanbas-dashboard-card .card-title {
+.kanbas-dashboard-card .card-link {
+  display: block;
   text-decoration: none;
   color: navy;
   font-weight: bold;
+}
+.kanbas-dashboard-card .card-text {
+  text-decoration: none;
+  color: #777;
+  font-weight: normal;
+  margin: 0;
+}
+.kanbas-dashboard-card .card-link:hover {
+  text-decoration: underline;
+}
+
+.kanbas-dashboard-card .card-btns {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 6px 8px;
+}
+.kanbas-dashboard-card .card-btns svg {
+  cursor: pointer;
+  color: white;
+  transition: color 0.15s ease;
+}
+.kanbas-dashboard-card .card-btns svg:hover {
+  cursor: pointer;
+  color: #d41b2c;
 }

@@ -13,12 +13,12 @@ import KanbasNavigation from "../Navigation";
 
 import "./styles.css";
 
-export default function Courses() {
+export default function Courses({ courses }: { courses: any[] }) {
   const location = useLocation();
   let breadcrumb = location.pathname.split("/");
   breadcrumb.splice(0, 4);
-  const { courseId = courses[0]._id } = useParams();
-  let course = courses.find((course) => course._id === courseId);
+  const { courseId } = useParams();
+  const course = courses.find((course) => course._id === courseId);
   return (
     <KanbasNavigation
       title={course?.number ?? ""}
