@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { courses as db_courses } from "../Database";
 import KanbasNavigation from "../Navigation";
 import { MdDelete, MdModeEditOutline } from "react-icons/md";
 

@@ -1,4 +1,5 @@
-import { courses } from "../../Kanbas/Database";
+import { useState, useEffect } from "react";
+import axios from "axios";
 import {
   Navigate,
   Route,
@@ -18,7 +19,18 @@ export default function Courses({ courses }: { courses: any[] }) {
   let breadcrumb = location.pathname.split("/");
   breadcrumb.splice(0, 4);
   const { courseId } = useParams();
-  const course = courses.find((course) => course._id === courseId);
+  const COURSES_API = "http://localhost:4000/api/courses";
+  const [course, setCourse] = useState<any>({ _id: "" });
+
+  const findCourseById = async (courseId?: string) => {
+    const response = await axios.get(`${COURSES_API}/${courseId}`);
+    setCourse(response.data);
+  };
+
+  useEffect(() => {
+    findCourseById(courseId);
+  }, [courseId]);
+
   return (
     <KanbasNavigation
       title={course?.number ?? ""}
