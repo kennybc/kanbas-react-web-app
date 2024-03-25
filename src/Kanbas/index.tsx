@@ -6,11 +6,11 @@ import Courses from "./Courses";
 import store from "./store";
 import { Provider } from "react-redux";
 import axios from "axios";
+import { COURSES_API } from "./API";
 
 import "./styles.css";
 
 function Kanbas() {
-  const COURSES_API = "http://localhost:4000/api/courses";
   const [courses, setCourses] = useState<any[]>([]);
   const [course, setCourse] = useState({
     _id: "1234",

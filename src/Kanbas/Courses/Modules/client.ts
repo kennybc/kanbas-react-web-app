@@ -1,6 +1,5 @@
 import axios from "axios";
-const COURSES_API = "http://localhost:4000/api/courses";
-const MODULES_API = "http://localhost:4000/api/modules";
+import { COURSES_API, MODULES_API } from "../../API";
 export const deleteModule = async (moduleId: any) => {
   const response = await axios.delete(`${MODULES_API}/${moduleId}`);
   return response.data;

@@ -11,6 +11,7 @@ import Modules from "./Modules";
 import Home from "./Home";
 import Assignments from "./Assignments";
 import KanbasNavigation from "../Navigation";
+import { COURSES_API } from "../API";
 
 import "./styles.css";
 
@@ -19,7 +20,6 @@ export default function Courses({ courses }: { courses: any[] }) {
   let breadcrumb = location.pathname.split("/");
   breadcrumb.splice(0, 4);
   const { courseId } = useParams();
-  const COURSES_API = "http://localhost:4000/api/courses";
   const [course, setCourse] = useState<any>({ _id: "" });
 
   const findCourseById = async (courseId?: string) => {
