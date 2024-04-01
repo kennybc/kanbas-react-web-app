@@ -64,10 +64,3 @@
   cursor: pointer;
   color: #d41b2c;
 }
-
-.module-form {
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: row;
-  gap: 5px;
-}

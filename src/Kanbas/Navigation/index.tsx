@@ -77,7 +77,7 @@ export default function KanbasNavigation({
           }}
           style={{ cursor: "pointer" }}
         >
-          <FaAngleDown size="25" />
+          {subNav ? <FaAngleDown size="25" /> : <></>}
         </div>
       </div>
       <div

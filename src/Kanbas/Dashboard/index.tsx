@@ -23,7 +23,7 @@ export default function Dashboard({
   return (
     <KanbasNavigation title="Dashboard">
       <div className="container-fluid py-4">
-        <div className="module-form">
+        <div className="post-form">
           <input
             value={course.name}
             onChange={(e) => setCourse({ ...course, name: e.target.value })}

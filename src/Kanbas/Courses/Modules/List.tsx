@@ -51,7 +51,7 @@ function ModuleList() {
   return (
     <>
       {/* <!-- Add buttons here --> */}
-      <div className="module-form">
+      <div className="post-form">
         <input
           value={module.name}
           onChange={(e) =>

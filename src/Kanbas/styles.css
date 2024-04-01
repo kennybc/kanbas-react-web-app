@@ -9,7 +9,7 @@
 .Kanbas .btn-red {
   background: #d41b2c;
   color: white !important;
-  border: 1px solid #666 !important;
+  border: 1px solid #be1827 !important;
 }
 .Kanbas .btn-red:hover {
   background: #be1827;
@@ -17,8 +17,22 @@
 .Kanbas .btn-green {
   background: green;
   color: white !important;
-  border: 1px solid #666 !important;
+  border: 1px solid #007300 !important;
 }
 .Kanbas .btn-green:hover {
   background: #007300;
+}
+.Kanbas .post-form {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  height: 40px;
+}
+.Kanbas .table-post-form td {
+  display: table-cell;
+  height: 50px;
+}
+.Kanbas .table-post-form td > * {
+  height: 40px;
 }

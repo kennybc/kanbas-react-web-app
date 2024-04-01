@@ -9,6 +9,7 @@ import axios from "axios";
 import { COURSES_API } from "./API";
 
 import "./styles.css";
+import Account from "./Account";
 
 function Kanbas() {
   const [courses, setCourses] = useState<any[]>([]);
@@ -53,7 +54,7 @@ function Kanbas() {
       <Provider store={store}>
         <Routes>
           <Route path="/" element={<Navigate to="Dashboard" />} />
-          <Route path="Account" element={<h1>Account</h1>} />
+          <Route path="Account/*" element={<Account />} />
           <Route
             path="Dashboard"
             element={
