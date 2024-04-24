@@ -9,14 +9,14 @@ function WorkingWithObjects() {
     completed: false,
     score: 0,
   });
-  const ASSIGNMENT_URL = "http://localhost:4000/a5/assignment";
+  const ASSIGNMENT_URL = `${process.env.REACT_APP_BASE_API_URL}/a5/assignment`;
   const [module, setModule] = useState({
     id: 1,
     name: "Web Dev",
     description: "Full stack web development class",
     course: "CS4550",
   });
-  const MODULE_URL = "http://localhost:4000/a5/module";
+  const MODULE_URL = `${process.env.REACT_APP_BASE_API_URL}/a5/module`;
 
   const fetchAssignment = async () => {
     const response = await axios.get(`${ASSIGNMENT_URL}`);
@@ -114,22 +114,28 @@ function WorkingWithObjects() {
       </a>
 
       <h4>Retrieving Objects</h4>
-      <a className="btn btn-primary" href="http://localhost:4000/a5/assignment">
+      <a
+        className="btn btn-primary"
+        href={`${process.env.REACT_APP_BASE_API_URL}/a5/assignment`}
+      >
         Get Assignment
       </a>
-      <a className="btn btn-primary" href="http://localhost:4000/a5/module">
+      <a
+        className="btn btn-primary"
+        href={`${process.env.REACT_APP_BASE_API_URL}/a5/module`}
+      >
         Get Module
       </a>
       <h4>Retrieving Properties</h4>
       <a
         className="btn btn-primary"
-        href="http://localhost:4000/a5/assignment/title"
+        href={`${process.env.REACT_APP_BASE_API_URL}/a5/assignment/title`}
       >
         Get Assignment Title
       </a>
       <a
         className="btn btn-primary"
-        href="http://localhost:4000/a5/module/name"
+        href={`${process.env.REACT_APP_BASE_API_URL}/a5/module/name`}
       >
         Get Module Name
       </a>
