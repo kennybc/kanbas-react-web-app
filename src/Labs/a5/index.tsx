@@ -10,7 +10,7 @@ function Assignment5() {
       <WorkingWithArrays />
       <WorkingWithObjects />
       <EncodingParametersInURLs />
-      <a href="http://localhost:4000/a5/welcome">Welcome</a>
+      <a href={`${process.env.REACT_APP_BASE_API_URL}/a5/welcome`}>Welcome</a>
     </div>
   );
 }
